@@ -24,7 +24,7 @@ const Navbar = () =>{
         window.addEventListener('scroll', handleScroll);
 
         return () => {
-            window.removeEventListener('scroll',handleScroll)
+            window.removeEventListener('scroll',handleScroll);
         }
     },[]);
 
@@ -48,11 +48,11 @@ const Navbar = () =>{
             transition
             duration-500
             
-            $(showBackground ? 'bg-zinc-900 bg-opacity-90' : '')
+            ${ShowBackground ? 'bg-zinc-900 bg-opacity-90' : ''}
             
             `}
             >
-                <img className="h-4 lg: h-7" src="/images/logo.png" alt="" />
+                <img className="h-4 lg: h-7" src="/images/logo.png" alt="Logo" />
                 <div className="
                     flex-row
                     ml-8
