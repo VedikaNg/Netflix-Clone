@@ -14,5 +14,4 @@ const useBillboard = () => {
         isLoading
     }
 }
-
 export default useBillboard;

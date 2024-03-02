@@ -1,3 +1,4 @@
+
 import React from "react";
 
 import { isEmpty } from 'lodash'
@@ -30,5 +31,4 @@ const MovieList: React.FC<MovieListProps> = ({data, title}) => {
         </div>
     )
 }
-
 export default MovieList;
