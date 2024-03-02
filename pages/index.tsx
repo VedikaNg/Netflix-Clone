@@ -3,7 +3,7 @@ import useCurrentUser from "@/hooks/useCurrentUser";
 
 import { NextPageContext } from "next";
 import { getSession } from "next-auth/react";
-
+import InfoModal from "@/components/InfoModal";
 import Navbar from "@/components/Navbar";
 import Billboard from "@/components/Billboard";
 import MovieList from "@/components/MovieList";
@@ -33,6 +33,7 @@ export default function Home() {
 
   return (
     <>
+      <InfoModal visible onClose={()=>{}}/>
       <Navbar/>
       <Billboard/>
       <div className="pb-40">
